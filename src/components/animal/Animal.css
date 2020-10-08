@@ -10,3 +10,12 @@
     padding: 1em;
     border: 1px solid goldenrod;
 }
+
+.addAnimalButton {
+  margin: 1em;
+}
+
+.animalForm {
+  margin: 1em;
+  max-width: 50%;
+}

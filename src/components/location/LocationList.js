@@ -10,12 +10,15 @@ export const LocationList = () => {
     useEffect(() => { getLocations() }, [])
 
     return (
-        <div className="locations">
-            {
-                locations.map(location => {
-                    return <LocationCard key={location.id} location={location} address={location.address} />
-                })
-            }
-        </div>
+        <>
+            <h2>Locations</h2>
+            <div className="locations">
+                {
+                    locations.map(location => {
+                        return <LocationCard key={location.id} location={location} address={location.address} />
+                    })
+                }
+            </div>
+        </>
     )
 }
